@@ -1,0 +1,38 @@
+{
+    "sourceFile": "script.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1680175492150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1680175497584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n \r\n const isNumberInArrayOfArrays = (number, array) => {\r\n \tconst allElementsArray = [];\r\n \r\n+\tconst elements = \r\n \t// arr.forEach(innerArray => {\r\n \t// \tallElementsArray.push(...innerArray);\r\n \t// });\r\n \r\n"
+                },
+                {
+                    "date": 1680175509235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n const isNumberInArrayOfArrays = (number, array) => {\r\n \tconst allElementsArray = [];\r\n \r\n-\tconst elements = \r\n+\tconst elements = array.map()\r\n \t// arr.forEach(innerArray => {\r\n \t// \tallElementsArray.push(...innerArray);\r\n \t// });\r\n \r\n"
+                },
+                {
+                    "date": 1680175523442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n const isNumberInArrayOfArrays = (number, array) => {\r\n \tconst allElementsArray = [];\r\n \r\n-\tconst elements = array.map()\r\n+\tconst elements = array.map(insideArray => ...insideArray);\r\n \t// arr.forEach(innerArray => {\r\n \t// \tallElementsArray.push(...innerArray);\r\n \t// });\r\n \r\n"
+                },
+                {
+                    "date": 1680175530252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n const isNumberInArrayOfArrays = (number, array) => {\r\n \tconst allElementsArray = [];\r\n \r\n \tconst elements = array.map(insideArray => {\r\n-\t\t\r\n+\t\tconsole.log(insideArray);\r\n \t});\r\n \t// arr.forEach(innerArray => {\r\n \t// \tallElementsArray.push(...innerArray);\r\n \t// });\r\n"
+                },
+                {
+                    "date": 1680175549584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \tconst allElementsArray = [];\r\n \r\n \tconst elements = array.map(insideArray => {\r\n \t\tconsole.log(insideArray);\r\n-\t\tinsideArray.forEach(el => e)\r\n+\t\tinsideArray.forEach(el => el);\r\n \t});\r\n \t// arr.forEach(innerArray => {\r\n \t// \tallElementsArray.push(...innerArray);\r\n \t// });\r\n"
+                }
+            ],
+            "date": 1680175492150,
+            "name": "Commit-0",
+            "content": "const arr = [\r\n\t[3, 21, 37],\r\n\t[71, 89, 101, 120],\r\n\t[133, 149],\r\n];\r\n\r\nconst isNumberInArrayOfArrays = (number, array) => {\r\n\tconst allElementsArray = [];\r\n\r\n\t// arr.forEach(innerArray => {\r\n\t// \tallElementsArray.push(...innerArray);\r\n\t// });\r\n\r\n\t// const arrayMiddleIndex = Math.round(allElementsArray.length / 2);\r\n\r\n\t// if (number == allElementsArray[arrayMiddleIndex]) {\r\n\t// \tconsole.log('true jest numerek i do tego rowny');\r\n\t// } else if (number > allElementsArray[arrayMiddleIndex]) {\r\n\t// \tallElementsArray.splice(0, arrayMiddleIndex);\r\n\r\n\t// \tallElementsArray.find(number => console.log('numerek jest i to wiekszy'));\r\n\t// } else if (number < allElementsArray[arrayMiddleIndex]) {\r\n\t// \tallElementsArray.splice(0, arrayMiddleIndex);\r\n\t// \tconsole.log(allElementsArray);\r\n\r\n\t// \tallElementsArray.find(el => {\r\n\t// \t\tel == number ? console.log('numerek jest i to mniejszy') : console.log('false');\r\n\t// \t});\r\n\t// }\r\n};\r\n\r\n//isNumberInArrayOfArrays(0, arr);\r\n//isNumberInArrayOfArrays(21, arr);\r\nisNumberInArrayOfArrays(3, arr);\r\n"
+        }
+    ]
+}
